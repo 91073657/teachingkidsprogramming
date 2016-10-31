@@ -43,6 +43,7 @@ public class ChooseYourOwnAdventure
     //         If they answer "toilet" --#8.1
     if ("toilet".equalsIgnoreCase(null))
     {
+      MessageBox.showMessage("hi");
       //            pourIntoToilet (recipe below) --#12.1
       //            ------------- Recipe for pourIntoToilet --#12.2
       //               Tell the user "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste." --#10
@@ -56,7 +57,7 @@ public class ChooseYourOwnAdventure
       //            ------------- End of pourIntoToilet recipe --#12.3
       //         Otherwise, if they answer "backyard" --#8.2
     }
-    else
+    else if ("backyard".equalsIgnoreCase(null))
     {
       //            pourIntoBackyard (recipe below) --#19.1
       //            ------------- Recipe for pourIntoBackyard --#19.2
@@ -70,10 +71,10 @@ public class ChooseYourOwnAdventure
       //                    endStory --#23
       //         ------------- End of pourIntoBackyard recipe --#19.3
     }
-    //         Otherwise, if they answer anything else --#8.3
-    if ()
-    System.exit(0);
-    //            endStory --#9
+    else
+    {
+      endStory();
+    }
   }
   private static void wakeUp()
   {
