@@ -7,7 +7,7 @@ import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
-public class ChooseYourOwnAdventure
+public class ChooseYourOwnAdventure02
 {
   public static void main(String[] args)
   {
@@ -15,16 +15,16 @@ public class ChooseYourOwnAdventure
   }
   private static void startStory()
   {
-    tellMoreStory("One morning the Tortoise woke up in a dream.");
+    tellMoreStory("One night Anthony was walking in the park");
     animateStartStory();
-    String action = askAQuestion("Do you want to 'wake up' or 'explore' the dream?");
-    if ("wake up".equalsIgnoreCase(action))
+    String action = askAQuestion("Do you want to keep 'walking' or 'leave'?");
+    if ("leave".equalsIgnoreCase(action))
     {
-      wakeUp();
+      leavePark();
     }
-    else if ("explore".equalsIgnoreCase(action))
+    else if ("walking".equalsIgnoreCase(action))
     {
-      approachOoze();
+      explorePark();
     }
     else
     {
@@ -35,16 +35,15 @@ public class ChooseYourOwnAdventure
   {
     MessageBox.showMessage("You don't know how to read directions. You can't play this game. The end.");
   }
-  private static void approachOoze()
+  private static void explorePark()
   {
-    MessageBox.showMessage(
-        "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
-    String input = askAQuestion("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
-    if ("toilet".equalsIgnoreCase(input))
+    MessageBox.showMessage("You keep walking and find a strange note on the ground.");
+    String input = askAQuestion("Do you want to 'read' the note or 'throw away'?");
+    if ("read".equalsIgnoreCase(input))
     {
       pourIntoToilet();
     }
-    else if ("backyard".equalsIgnoreCase(input))
+    else if ("throw away".equalsIgnoreCase(input))
     {
       pourIntoBackyard();
     }
@@ -91,9 +90,9 @@ public class ChooseYourOwnAdventure
       endStory();
     }
   }
-  private static void wakeUp()
+  private static void leavePark()
   {
-    MessageBox.showMessage("You wake up and have a boring day. The end.");
+    MessageBox.showMessage("You go back home and go to bed. The End.");
   }
   private static void animateStartStory()
   {
