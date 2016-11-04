@@ -41,40 +41,27 @@ public class ChooseYourOwnAdventure02
     String input = askAQuestion("Do you want to 'read' the note or 'throw away'?");
     if ("read".equalsIgnoreCase(input))
     {
-      pourIntoToilet();
+      readNote();
     }
     else if ("throw away".equalsIgnoreCase(input))
     {
-      pourIntoBackyard();
+      throwAwayNote();
     }
     else
     {
       endStory();
     }
   }
-  private static void pourIntoBackyard()
+  private static void throwAwayNote()
   {
-    MessageBox.showMessage(
-        "As you walk into the backyard a net scoops you up and a giant takes you to a boiling pot of water.");
-    String input = askAQuestion("As the man starts to prepare you as soup, do you...'Scream' or 'Faint'?");
-    if ("faint".equalsIgnoreCase(input))
-    {
-      MessageBox.showMessage("You made a delicious soup! Yum! The end.");
-    }
-    else if ("scream".equalsIgnoreCase(input))
-    {
-      startStory();
-    }
-    else
-    {
-      endStory();
-    }
+    MessageBox
+        .showMessage("You throw the note away into the trash can and finish your walk in the park. The End.");
   }
-  private static void pourIntoToilet()
+  private static void readNote()
   {
     MessageBox.showMessage(
-        "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
-    String input = askAQuestion("Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?");
+        "You read the note and it says I have your dog at the warehouse. Bring $10,000 if you want him back.");
+    String input = askAQuestion("Do you want to go to the 'warehouse' or call the 'police'?");
     if ("YES".equalsIgnoreCase(input))
     {
       MessageBox
