@@ -62,15 +62,15 @@ public class ChooseYourOwnAdventure02
     MessageBox.showMessage(
         "You read the note and it says I have your dog at the warehouse. Bring $10,000 if you want him back.");
     String input = askAQuestion("Do you want to go to the 'warehouse' or call the 'police'?");
-    if ("YES".equalsIgnoreCase(input))
+    if ("warehouse".equalsIgnoreCase(input))
     {
-      MessageBox
-          .showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");
+      MessageBox.showMessage(
+          "You go to the the warehouse and beat up the guy who stole your dog. Then you and your dog go back and you live happliy ever after.");
     }
-    else if ("heck yes".equalsIgnoreCase(input))
+    else if ("police".equalsIgnoreCase(input))
     {
-      MessageBox
-          .showMessage("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");
+      MessageBox.showMessage(
+          "The police go to the warehouse and arrest the man that stole your dog and give you dog back. You then live happily ever after with your dog.");
     }
     else
     {

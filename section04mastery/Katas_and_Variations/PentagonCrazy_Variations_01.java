@@ -1,11 +1,11 @@
-package org.teachingkidsprogramming.section04mastery;
+package org.teachingkidsprogramming.section04mastery.Katas_and_Variations;
 
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.ColorWheel;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors.Blues;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors.Purples;
 
-public class PentagonCrazy
+public class PentagonCrazy_Variations_01
 {
   public static void main(String[] args)
   {
@@ -23,7 +23,7 @@ public class PentagonCrazy
     {
       adjustPen();
       Tortoise.move(i);
-      Tortoise.turn(360 / 5);
+      Tortoise.turn(360 / 10);
       Tortoise.turn(1);
     }
   }
@@ -31,7 +31,7 @@ public class PentagonCrazy
   {
     Tortoise.setPenColor(ColorWheel.getNextColor());
     Tortoise.setPenWidth(Tortoise.getPenWidth() + 1);
-    if (Tortoise.getPenWidth() > 4)
+    if (Tortoise.getPenWidth() > 5)
     {
       Tortoise.setPenWidth(1);
     }

@@ -2,6 +2,7 @@ package org.teachingkidsprogramming.section04mastery;
 
 import java.awt.Color;
 
+import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.ColorWheel;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 
@@ -9,9 +10,11 @@ public class DigiFlower
 {
   public static void main(String[] args)
   {
-    //    Show the tortoise --#1
-    //    Make the tortoise move as fast as possible --#7
+    Tortoise.show();
+    Tortoise.setSpeed(10);
     //    Make the background silver  --#8
+    Tortoise.getBackgroundWindow().setColor();
+    color = PenColors.Grays.Silver(color);
     //    Make the line the tortoise draws 3 pixels wide --#15
     //    createColorPalette (recipe below) --#9.1
     //        Do the following 15 times --#13.1
@@ -34,11 +37,12 @@ public class DigiFlower
     //    ------------- End of createColorPalette recipe --#9.3
     //
     //    ------------- Recipe for drawOctogon --#10.2
-    //    Do the following 8 times --#6.1
-    //      Change the pen color of the line the tortoise draws to the next color on the color wheel --#4
-    //      Move the tortoise 50 pixels --#2
-    //      Turn the tortoise 1/8th of 360 degrees to the right --#5
-    //    Repeat --#6.2 
+    for (int i = 0; i < 8; i++)
+    {
+      Tortoise.setPenColor(ColorWheel.getNextColor());
+      Tortoise.move(50);
+      Tortoise.turn(360 / 8);
+    }
     //    ------------- End of drawOctogon recipe --#10.3
   }
 }
