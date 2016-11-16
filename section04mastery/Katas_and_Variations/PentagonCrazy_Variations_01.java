@@ -3,7 +3,8 @@ package org.teachingkidsprogramming.section04mastery.Katas_and_Variations;
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.ColorWheel;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors.Blues;
-import org.teachingextensions.logo.utils.ColorUtils.PenColors.Purples;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors.Greens;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors.Reds;
 
 public class PentagonCrazy_Variations_01
 {
@@ -19,19 +20,19 @@ public class PentagonCrazy_Variations_01
   }
   private static void drawPentagon()
   {
-    for (int i = 0; i < 200; i++)
+    for (int i = 0; i < 250; i++)
     {
       adjustPen();
       Tortoise.move(i);
-      Tortoise.turn(360 / 10);
-      Tortoise.turn(1);
+      Tortoise.turn(350 / 9);
+      Tortoise.turn(350 / 2);
     }
   }
   private static void adjustPen()
   {
     Tortoise.setPenColor(ColorWheel.getNextColor());
     Tortoise.setPenWidth(Tortoise.getPenWidth() + 1);
-    if (Tortoise.getPenWidth() > 5)
+    if (Tortoise.getPenWidth() > 6)
     {
       Tortoise.setPenWidth(1);
     }
@@ -39,9 +40,9 @@ public class PentagonCrazy_Variations_01
   private static void createColorPalette()
   {
     ColorWheel.addColor(Blues.SteelBlue);
-    ColorWheel.addColor(Purples.DarkOrchid);
-    ColorWheel.addColor(Blues.DarkSlateBlue);
+    ColorWheel.addColor(Reds.LightSalmon);
+    ColorWheel.addColor(Greens.LightGreen);
     ColorWheel.addColor(Blues.Teal);
-    ColorWheel.addColor(Purples.Indigo);
+    ColorWheel.addColor(Reds.OrangeRed);
   }
 }
