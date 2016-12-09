@@ -22,14 +22,14 @@ public class DeepDive06ModelViewController
   @Test
   public void stringsCanBeArrays() throws Exception
   {
-    String[] words = {"happy ", ___};
+    String[] words = {"happy ", "baby"};
     String result = words[0] + words[1];
     Assert.assertEquals("happy baby", result);
   }
   @Test
   public void numbersCanBeStrings() throws Exception
   {
-    int numberOfBabies = ____;
+    int numberOfBabies =   ;
     String words = "" + numberOfBabies + " happy babies";
     Assert.assertEquals("10 happy babies", words);
   }
@@ -37,7 +37,7 @@ public class DeepDive06ModelViewController
   public void trashtalkingFlorida() throws Exception
   {
     String compareThis = "is to";
-    String analogy = "Florida " + ___ + " America as appendix " + ___ + " body";
+    String analogy = "Florida " + "is to" + " America as appendix " + "is to" + " body";
     Assert.assertEquals("Florida is to America as appendix is to body", analogy);
   }
   @Test
