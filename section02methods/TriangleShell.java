@@ -6,7 +6,7 @@ import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 @SuppressWarnings("unused")
 public class TriangleShell
 {
-  private static int length = length + 4;
+  private static int length = +4;
   public static void main(String[] args)
   {
     Tortoise.show();

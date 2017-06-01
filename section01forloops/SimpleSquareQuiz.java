@@ -25,7 +25,7 @@ public class SimpleSquareQuiz implements SquareQuiz
   public void question4()
   {
     //  Change the width of the line the tortoise draws to 5 pixels
-    Tortoise.sPW
+    Tortoise.getPenWidth();
   }
   public static void main(String[] args)
   {

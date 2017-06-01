@@ -1,5 +1,7 @@
 package org.teachingkidsprogramming.section01forloops;
 
+import java.awt.Color;
+
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.ColorWheel;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
@@ -7,6 +9,7 @@ import org.teachingextensions.virtualproctor.VirtualProctor;
 
 public class DoubleLoop
 {
+  private static final Color Pen = null;
   public static void main(String[] args)
   {
     VirtualProctor.setClassName("Palm Digital");

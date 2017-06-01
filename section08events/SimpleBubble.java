@@ -1,5 +1,6 @@
 package org.teachingkidsprogramming.section08events;
 
+import org.teachingextensions.WindowUtils.ProgramWindow;
 import org.teachingextensions.logo.utils.EventUtils.MouseLeftClickListener;
 
 public class SimpleBubble implements MouseLeftClickListener
@@ -7,6 +8,7 @@ public class SimpleBubble implements MouseLeftClickListener
   public SimpleBubble()
   {
     //    Create a ProgramWindow titled My Bubble --#1.1
+    ProgramWindow
     //    Uncomment the line below -- #1.2
     //    programWindow.setWindowVisible(true);
     //    Have SimpleBubble listen for when the left mouse button is clicked in your program window --#2.2
